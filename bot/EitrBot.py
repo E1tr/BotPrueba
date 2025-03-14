@@ -120,6 +120,7 @@ async def on_message(message):
         await message.channel.send('https://media.discordapp.net/attachments/832209775625240586/834001284536991754/bypassing_discord_be_like.gif?ex=67d0ae79&is=67cf5cf9&hm=e44758c61fe5edb08ee67bd88b5a95a6a4ab7e7c2e1bce475b9388a7afd34165&')
 
     if "saluden al generalisimo" in message.content.lower():
+        user = await bot.fetch_user(610522653161160744) # ID de usuario
         saluden = (f"Saluden a {user.mention}\n"
                    "¡Por una, grande y libre!\n"
                    "Viva, viva, la revolución\n"
@@ -129,8 +130,23 @@ async def on_message(message):
                    "que no queremos reyes idiotas\n"
                    "que no nos dejan gobernar\n")
         await message.channel.send('https://phantom-elmundo.unidadeditorial.es/5fd01e4cd7f813917be72b3362a233aa/crop/56x0/918x575/resize/414/f/jpg/assets/multimedia/imagenes/2019/10/29/15723652525948.jpg')
-        user = await bot.fetch_user(610522653161160744)  # ID de usuario
         await message.channel.send(f"{saluden}")
+
+    if "viva españa" in message.content.lower():
+        españa = ("Por españa \n"
+                  "y el que quiera defenderla, \n"
+                  "honrado muera, \n"
+                  "y el traidor que la abandone, \n"
+                  "no tenga quien le perdone, \n"
+                  "ni en tierra santa cobijo, \n"
+                  "ni una cruz en sus despojos, \n"
+                  "ni las manos de un buen hijo, \n"
+                  "para cerrarle los ojos.\n "
+                  "¡Por una grande y libre!\n"
+                  "¡Viva España! \n"
+                  "¡Viva el Rey! \n"
+                  "¡Viva el orden y la ley! \n")
+        await message.channel.send(españa)
 
     if "oviedo rojo" in message.content.lower():
         rojo =("Unión inalterable de repúblicas libres \n"
